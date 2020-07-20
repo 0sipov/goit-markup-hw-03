@@ -29,7 +29,7 @@ body {
   background-color: #ffffff;
   font-family: roboto, sans-serif;
   font-style: normal;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   margin: 0;
 }
 h1,
@@ -69,7 +69,8 @@ address {
   color: var(--secondary-color);
 }
 section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 /* Utilities */
 .container {
@@ -105,14 +106,15 @@ nav {
 }
 .site-nav {
   display: flex;
+  margin-left: 85px;
 }
 .site-nav > li {
   /* background-color: blue; */
   /* outline: 2px solid red; */
   margin-left: 50px;
 }
-.site-nav:first-child {
-  margin-left: 85px;
+.site-nav > li:first-child {
+  margin-left: 0;
 }
 .site-nav a {
   display: block;
@@ -124,7 +126,7 @@ nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   border-bottom: solid;
   border-color: transparent;
 }
@@ -145,7 +147,7 @@ nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 .header-mail-tel:hover,
 .header-mail-tel:focus {
@@ -185,7 +187,7 @@ nav {
 }
 /* Our advantages */
 
-.advantages > .items {
+.advantages .items {
   display: flex;
 }
 .advantages .item:not(:first-child) {
@@ -216,13 +218,13 @@ nav {
   line-height: 1.7;
 }
 /* What we can */
-.we-can > .items {
+.we-can .items {
   display: flex;
 }
 .we-can .item:not(:first-child) {
   margin-left: 30px;
 }
-.we-can > h2 {
+.we-can h2 {
   margin-bottom: 50px;
 }
 .we-can p {
@@ -246,7 +248,7 @@ nav {
 .team h2 {
   margin-bottom: 50px;
 }
-.team > .items {
+.team .items {
   display: flex;
 }
 .team .item {
@@ -294,7 +296,7 @@ nav {
   display: flex;
   justify-content: center;
 }
-.clients .item:not(first-child) {
+.clients .item:not(:first-child) {
   margin-left: 30px;
 }
 /* Main portfolio.html */
@@ -386,6 +388,7 @@ footer {
 }
 .footer .logo {
   margin-bottom: 20px;
+  color: var(--secondary-color);
 }
 .footer .mail-tel {
   display: block;
