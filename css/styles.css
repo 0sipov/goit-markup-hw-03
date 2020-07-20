@@ -238,12 +238,8 @@ nav {
   text-transform: uppercase;
 }
 /* Our team */
-.team-container {
-  background-color: var(--grey-color);
-}
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--grey-color);
 }
 .team h2 {
   margin-bottom: 50px;
@@ -301,10 +297,6 @@ nav {
 }
 /* Main portfolio.html */
 /* Portfolio */
-.portfolio {
-  margin-top: 93px;
-  margin-bottom: 94px;
-}
 .portfolio h1 {
   display: none;
 }
